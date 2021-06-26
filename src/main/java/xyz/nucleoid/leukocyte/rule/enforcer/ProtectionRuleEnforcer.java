@@ -23,5 +23,11 @@ public interface ProtectionRuleEnforcer {
                 this.events.listen(event, factory.createListener(this.result.asActionResult()));
             }
         }
+
+        public <T> void apply(StimulusEvent<T> event, ListenerFactory<T> factory) {
+            if (this.result.isDefinitive()) {
+                this.events.listen(event, factory.createListener(this.result.asActionResult()));
+            }
+        }
     }
 }

@@ -27,6 +27,7 @@ public final class ProtectionRule {
     public static final ProtectionRule CRAFTING = register("crafting");
     public static final ProtectionRule HUNGER = register("hunger");
     public static final ProtectionRule FALL_DAMAGE = register("fall_damage");
+    public static final ProtectionRule DAMAGE = register("damage");
 
     public static final ProtectionRule THROW_ITEMS = register("throw_items");
     public static final ProtectionRule PICKUP_ITEMS = register("pickup_items");
@@ -34,10 +35,14 @@ public final class ProtectionRule {
     public static final ProtectionRule UNSTABLE_TNT = register("unstable_tnt");
     public static final ProtectionRule IGNITE_TNT = register("ignite_tnt");
     public static final ProtectionRule SPAWN_WITHER = register("spawn_wither");
+    public static final ProtectionRule SPAWN_MONSTERS = register("spawn_monsters");
+    public static final ProtectionRule SPAWN_ANIMAL = register("spawn_animal");
+    public static final ProtectionRule SPAWN_AMBIENT = register("spawn_ambient");
 
     public static final ProtectionRule FIRE_TICK = register("fire_tick");
     public static final ProtectionRule FLUID_FLOW = register("fluid_flow");
     public static final ProtectionRule ICE_MELT = register("ice_melt");
+    public static final ProtectionRule EXPLOSION = register("explosion");
 
     private final String key;
 

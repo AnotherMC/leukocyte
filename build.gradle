@@ -12,6 +12,7 @@ group = project.maven_group
 repositories {
   maven { url = "https://maven.nucleoid.xyz" }
   maven { url = "https://maven.gegy.dev/" }
+  mavenLocal()
 }
 
 dependencies {
@@ -21,7 +22,7 @@ dependencies {
 
   modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-  modImplementation include('xyz.nucleoid:stimuli:0.2.0+1.17')
+  modImplementation include('xyz.nucleoid:stimuli:0.2.2+1.17')
 
   modCompileOnly "dev.gegy:player-roles-api:1.4.2"
 
